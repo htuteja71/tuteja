@@ -1,13 +1,13 @@
 pipeline{
     agent any
 	environment {
-		ARM_CLIENT_ID = "af216b78-4588-4d50-bb22-c56e1b1accd4"
-		ARM_CLIENT_SECRET = "HIr7Q~p5Q~DhX7ONEldIrDwBbOuMrmBGfHL6-"
-		ARM_TENANT_ID = "0a7db384-b668-458a-ae2e-c532ef6042b3"
-		AZURE_CLIENT_ID = "af216b78-4588-4d50-bb22-c56e1b1accd4"
-		AZURE_CLIENT_SECRET = "HIr7Q~p5Q~DhX7ONEldIrDwBbOuMrmBGfHL6-"
-		AZURE_TENANT_ID = "0a7db384-b668-458a-ae2e-c532ef6042b3"
-		ARM_SUBSCRIPTION_ID = "115633b2-033b-457a-bf9a-b64fb459dd7d"
+		ARM_CLIENT_ID = "23101c39-455f-4b5f-9b33-ab76d68b4f7c"
+		ARM_CLIENT_SECRET = "PFt7Q~qs~YA3iZ11aHNugEmUB4fbhbPZ2v9hk"
+		ARM_TENANT_ID = "fc4cf7ec-2b33-4ccb-bf4f-dfdf72a2e9c6"
+		AZURE_CLIENT_ID = "23101c39-455f-4b5f-9b33-ab76d68b4f7c"
+		AZURE_CLIENT_SECRET = "PFt7Q~qs~YA3iZ11aHNugEmUB4fbhbPZ2v9hk"
+		AZURE_TENANT_ID = "fc4cf7ec-2b33-4ccb-bf4f-dfdf72a2e9c6"
+
 	}
     stages{
         stage('Terraform version info'){
@@ -17,7 +17,7 @@ pipeline{
         }
         stage('Git'){
             steps{
-                git 'https://github.com/bhaskarmulinty/devops/'
+                git 'https://github.com/htuteja71/tuteja.git'
             }
         }
         stage('terraform init'){
