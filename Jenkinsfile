@@ -17,7 +17,7 @@ pipeline{
         }
         stage('Git'){
             steps{
-                git 'https://github.com/htuteja71/tuteja.git'
+                git 'https://github.com/htuteja71/tuteja'
             }
         }
         stage('terraform init'){
